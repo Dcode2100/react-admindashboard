@@ -1,21 +1,14 @@
 import React from 'react';
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, Legend, Category, StackingColunmSeries, ToolTip } from '@syncfusion/ej2-react-charts';
 
-import { stackedCustomSeries, stackedPrimaryAxis, stackedPrimaryXAxis, stackedPrimaryYAxis } from '../../data/dummy';
+import { ChartsHeader, Stacked as StackedChart } from '../../components';
 
-const Stacked = ({ width, height }) => {
-  return (<ChartComponent
-    width = {width}
-    height={ height}
-    id="stack chart"
-    primaryXaxis={stackedPrimaryXAxis}
-    >
-    <Inject services = {[Legent, Category,
-    StackingColunmSeries, ToolTip]} />
-  </ChartComponent>
-    
-  )
-}
+const Stacked = () => (
+  <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
+    <ChartsHeader category="Stacked" title="Revenue Breakdown" />
+    <div className="w-full">
+      <StackedChart />
+    </div>
+  </div>
+);
 
 export default Stacked;
-
