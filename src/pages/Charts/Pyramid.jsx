@@ -7,3 +7,4 @@ const Pyramid = () => {
 }
 
 export default Pyramid
+
