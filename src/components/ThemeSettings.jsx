@@ -6,4 +6,4 @@ const ThemeSettings = () => {
   )
 }
 
-export default ThemeSettings
+export default ThemeSettings;
